@@ -1,4 +1,4 @@
-# Project Title
+# Python Webserver bootstrap
 
 Bootstrap for Python based webserver. Simple webserver in python with option to enable HTTP Authentication, process simple POST & GET request using [Mako](https://www.makotemplates.org/) tempting engine. This is meant to be light and straight to the point, no-frills.
 
