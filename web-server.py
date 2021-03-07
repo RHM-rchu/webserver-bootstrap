@@ -11,7 +11,7 @@ import socketserver
 from urllib.parse import urlparse, parse_qs
 from mako.template import Template
 
-WEB_REQURE_AUTH = True                    #<---- Must use user/pass to access web UI
+WEB_REQURE_AUTH = True
 WEB_USERNAME = "user"
 WEB_PASSWORD = "pass"
 SERVERPORT = 8081
@@ -23,7 +23,7 @@ def render_html_homepage(query_components=None):
         date_begin = query_components["date_begin"][0]
     date_today = datetime.datetime.now().strftime("%Y-%m-%d")
 
-    htmllist = Template(filename='html/home.html')
+    htmllist = Template(filename='html/_home.html')
     html = htmllist.render(
         date_today=date_today
         )
